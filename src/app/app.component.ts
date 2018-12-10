@@ -1,27 +1,11 @@
 import { Component } from '@angular/core'
+import { TableComponent } from './table/table.component'
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
-  template: `<ng2-smart-table [settings]="settings"></ng2-smart-table>`
+  styleUrls: ['./app.component.css']  
 })
 export class AppComponent {
   title = 'exchange-ws'
-  settings = {
-    columns: {
-      id: {
-        title: 'ID'
-      },
-      name: {
-        title: 'Full Name'
-      },
-      username: {
-        title: 'User Name'
-      },
-      email: {
-        title: 'Email'
-      }
-    }
-  }
 }
